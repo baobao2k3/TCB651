@@ -1,33 +1,31 @@
 namespace TCB651.Models;
 
-// public class Person
+public class Person
 {
-   public int id;
+   public string id;
    public required string Address;
    public required string School;
 
-   public void EnterData() {
-     System.Console.WriteLine("Address= ");
+
+   public void Create(){
+     System.Console.WriteLine("id= ");
+     id = Console.ReadLine();
+    System.Console.WriteLine("Address= ");
      Address = Console.ReadLine();
      System.Console.WriteLine("School= ");
      Address = Console.ReadLine();
    }
-
-
-   public void Create(){
-         
-   }
-    public void Read(int id){
-     if(){
-
+    public string Read(string idPs){
+     if(id == idPs){
+        
      }
    }
-    public void Update(int id){
+    public void Update(int idPs){
     
    }
 
-    public void Delete(int id){
-      
+    public void Delete(){
+     
    }
 
 }
